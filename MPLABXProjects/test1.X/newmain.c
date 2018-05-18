@@ -1,4 +1,3 @@
-
 #include <p18f2553.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,8 +24,22 @@
 #pragma config WRT0=OFF,WRT1=OFF,WRT2=OFF,WRT3=OFF,WRTB=OFF,WRTC=OFF,WRTD=OFF
 #pragma config EBTR0=OFF,EBTR1=OFF,EBTR2=OFF,EBTR3=OFF,EBTRB=OFF
 
-int main(void){
+unsigned char on[] = "A";
+unsigned char i = 0,flage=0;
+
+void delay1s(void)               //??1????
+{
+    unsigned char i,j,k,x;  
+    for(x=5;x>0;x--)
+    for(i=20;i>0;i--)     
+    for(j=20;j>0;j--)
+    for(k=248;k>0;k--);
+}
+
+void main (void)
+{
     char cmnd; 
+    char buffer[6];
     char on[]  = "\r\nON";
     char off[] = "\r\nOFF";
     char log0[] = "flag is 0\r\n";
@@ -43,46 +56,29 @@ int main(void){
                 USART_ASYNCH_MODE & USART_EIGHT_BIT &
                 USART_CONT_RX & USART_BRGH_LOW, 12);
         
-    while(1){
-        if(DataRdyUSART()){
-            cmnd = ReadUSART();        
-            if(cmnd == '0'){
-                flag = 0;
-            }else if(cmnd == '1'){
-                flag = 1;
-            }else if(cmnd == '2'){
-                flag = 2;
-            }else{
-                flag = 0;
-            }
-        }
         
-        if(flag == 0){
-            LATBbits.LATB5 = 0;
-            Delay10KTCYx(256);
-            LATBbits.LATB5 = 1;
-            Delay10KTCYx(256);
-            putsUSART(log0);
-        }else if(flag == 1){
-            LATBbits.LATB5 = 0;
-            Delay10KTCYx(40);
-            LATBbits.LATB5 = 1;
-            Delay10KTCYx(40);
-            putsUSART(log1);
-        }else if(flag == 2){
-            LATBbits.LATB5 = 0;
-            Delay10KTCYx(150);
-            LATBbits.LATB5 = 1;
-            Delay10KTCYx(150);
-            putsUSART(log2);
-        }else{
-            LATBbits.LATB5 = 0;
-            Delay10KTCYx(100);
-            LATBbits.LATB5 = 1;
-            Delay10KTCYx(100);
-            putsUSART(log3);
-        
-        }
-                          
-    }
+    while(1)
+    {
+        for(i=0;i<4;i++)
+        {
+            if(flage)
+            {
+                SBUF=buffer[i];                 
+     delay1s();
+  flage=1;
+   }
+ }
 }
+void UART_SER (void) interrupt 4 
+{
+   unsigned char Temp;           
+   if(RI)                        
+     {
+   RI=0;                                     
+  }
+   if(TI)                        
+ {
+ TI = 0;
+ flage=0;
+  }
+} 
