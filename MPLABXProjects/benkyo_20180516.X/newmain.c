@@ -12,7 +12,7 @@
 #include <usart.h>
 #include <adc.h>
 
-#pragma config PLLDIV=2             // 8 MHz 
+#pragma config PLLDIV=5             // 8 MHz 
 #pragma config CPUDIV=OSC1_PLL2     // 96 MHz
 #pragma config USBDIV=2             // 48 MHz
 #pragma config FOSC=HS
@@ -45,9 +45,10 @@ void main(void)
     OpenADC(ADC_FOSC_64 & ADC_RIGHT_JUST & ADC_20_TAD, ADC_CH8
             & ADC_INT_OFF & ADC_REF_VDD_VSS, 0b00011001);
     
+    //????? 32     20MHz,     12    8MHz
     OpenUSART(USART_TX_INT_OFF & USART_RX_INT_OFF &
                 USART_ASYNCH_MODE & USART_EIGHT_BIT &
-                USART_CONT_RX & USART_BRGH_LOW, 12);
+                USART_CONT_RX & USART_BRGH_LOW, 32);
     while(1)
     {
         if(DataRdyUSART())
