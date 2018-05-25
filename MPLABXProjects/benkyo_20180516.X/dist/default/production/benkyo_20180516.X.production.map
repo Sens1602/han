@@ -1,5 +1,9 @@
 MPLINK 5.00, LINKER
+<<<<<<< HEAD
+Linker Map File - Created Fri May 25 14:34:14 2018
+=======
 Linker Map File - Created Wed May 23 16:39:02 2018
+>>>>>>> origin/master
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
