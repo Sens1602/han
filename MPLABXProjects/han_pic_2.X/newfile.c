@@ -39,6 +39,7 @@ void main(void)
 {
     char cmnd = '0';
     int flag = 0;
+    char outbuf[30];
     TRISA = 0;
     TRISB = 0;
     //TRISB= 0b00011110;
@@ -363,13 +364,13 @@ void main(void)
     
     
 
-    outbuf[18] = (char)(AdcRes[3] / 10.0);
-    outbuf[19] = (char)(AdcRes[4] / 10.0);
-    outbuf[20] = (char)(AdcRes[5] / 10.0);
-    outbuf[21] = (char)(AdcRes[6] / 10.0);
-    outbuf[22] = (char)(AdcRes[7] / 10.0);
-    outbuf[23] = (char)(AdcRes[8] / 10.0);
-    outbuf[24] = (char)(AdcRes[9] / 10.0);
-    outbuf[25] = (char)(AdcRes[10] / 10.0);
+    outbuf[0] = (char)(AdcRes[3] / 10.0);
+    outbuf[1] = (char)(AdcRes[4] / 10.0);
+    outbuf[2] = (char)(AdcRes[5] / 10.0);
+    outbuf[3] = (char)(AdcRes[6] / 10.0);
+    outbuf[4] = (char)(AdcRes[7] / 10.0);
+    outbuf[5] = (char)(AdcRes[8] / 10.0);
+    outbuf[6] = (char)(AdcRes[9] / 10.0);
+    outbuf[7] = (char)(AdcRes[10] / 10.0);
      }
     }
