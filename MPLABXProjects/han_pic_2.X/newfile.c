@@ -104,6 +104,272 @@ void main(void)
     while(BusyUSART());
     WriteUSART(AdcRes[10]);
     while(BusyUSART());
+   
+    SetChanADC(ADC_CH8);
+    ConvertADC();
+    while(BusyADC()); 
+   AdcRes[3] = ADRESH;//??8???
+   AdcRes[4] = ADRESL;//??8???
     
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[5] = ADRESH;//??8???
+    AdcRes[6] = ADRESL;//??8???
+
+    SetChanADC(ADC_CH10);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[7] = ADRESH;//??8???
+    AdcRes[8] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[9] = ADRESH;//??8???
+    AdcRes[10] = ADRESL;//??8???
+    
+    
+    
+   SetChanADC(ADC_CH8);
+    ConvertADC();
+    while(BusyADC()); 
+   AdcRes[3] = ADRESH;//??8???
+   AdcRes[4] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[5] = ADRESH;//??8???
+    AdcRes[6] = ADRESL;//??8???
+
+    SetChanADC(ADC_CH10);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[7] = ADRESH;//??8???
+    AdcRes[8] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[9] = ADRESH;//??8???
+    AdcRes[10] = ADRESL;//??8???
+    
+    
+    SetChanADC(ADC_CH8);
+    ConvertADC();
+    while(BusyADC()); 
+   AdcRes[3] = ADRESH;//??8???
+   AdcRes[4] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[5] = ADRESH;//??8???
+    AdcRes[6] = ADRESL;//??8???
+
+    SetChanADC(ADC_CH10);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[7] = ADRESH;//??8???
+    AdcRes[8] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[9] = ADRESH;//??8???
+    AdcRes[10] = ADRESL;//??8???
+    
+    
+    
+   SetChanADC(ADC_CH8);
+    ConvertADC();
+    while(BusyADC()); 
+   AdcRes[3] = ADRESH;//??8???
+   AdcRes[4] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[5] = ADRESH;//??8???
+    AdcRes[6] = ADRESL;//??8???
+
+    SetChanADC(ADC_CH10);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[7] = ADRESH;//??8???
+    AdcRes[8] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[9] = ADRESH;//??8???
+    AdcRes[10] = ADRESL;//??8???
+    
+    
+    SetChanADC(ADC_CH8);
+    ConvertADC();
+    while(BusyADC()); 
+   AdcRes[3] = ADRESH;//??8???
+   AdcRes[4] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[5] = ADRESH;//??8???
+    AdcRes[6] = ADRESL;//??8???
+
+    SetChanADC(ADC_CH10);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[7] = ADRESH;//??8???
+    AdcRes[8] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[9] = ADRESH;//??8???
+    AdcRes[10] = ADRESL;//??8???
+    
+    
+    
+   SetChanADC(ADC_CH8);
+    ConvertADC();
+    while(BusyADC()); 
+   AdcRes[3] = ADRESH;//??8???
+   AdcRes[4] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[5] = ADRESH;//??8???
+    AdcRes[6] = ADRESL;//??8???
+
+    SetChanADC(ADC_CH10);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[7] = ADRESH;//??8???
+    AdcRes[8] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[9] = ADRESH;//??8???
+    AdcRes[10] = ADRESL;//??8???
+    
+    
+    SetChanADC(ADC_CH8);
+    ConvertADC();
+    while(BusyADC()); 
+   AdcRes[3] = ADRESH;//??8???
+   AdcRes[4] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[5] = ADRESH;//??8???
+    AdcRes[6] = ADRESL;//??8???
+
+    SetChanADC(ADC_CH10);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[7] = ADRESH;//??8???
+    AdcRes[8] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[9] = ADRESH;//??8???
+    AdcRes[10] = ADRESL;//??8???
+    
+    
+    
+   SetChanADC(ADC_CH8);
+    ConvertADC();
+    while(BusyADC()); 
+   AdcRes[3] = ADRESH;//??8???
+   AdcRes[4] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[5] = ADRESH;//??8???
+    AdcRes[6] = ADRESL;//??8???
+
+    SetChanADC(ADC_CH10);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[7] = ADRESH;//??8???
+    AdcRes[8] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[9] = ADRESH;//??8???
+    AdcRes[10] = ADRESL;//??8???
+    
+    
+    
+        
+   SetChanADC(ADC_CH8);
+    ConvertADC();
+    while(BusyADC()); 
+   AdcRes[3] = ADRESH;//??8???
+   AdcRes[4] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[5] = ADRESH;//??8???
+    AdcRes[6] = ADRESL;//??8???
+
+    SetChanADC(ADC_CH10);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[7] = ADRESH;//??8???
+    AdcRes[8] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[9] = ADRESH;//??8???
+    AdcRes[10] = ADRESL;//??8???
+    
+    
+        
+   SetChanADC(ADC_CH8);
+    ConvertADC();
+    while(BusyADC()); 
+   AdcRes[3] = ADRESH;//??8???
+   AdcRes[4] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH9);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[5] = ADRESH;//??8???
+    AdcRes[6] = ADRESL;//??8???
+
+    SetChanADC(ADC_CH10);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[7] = ADRESH;//??8???
+    AdcRes[8] = ADRESL;//??8???
+    
+    SetChanADC(ADC_CH11);
+    ConvertADC();
+    while(BusyADC()); 
+    AdcRes[9] = ADRESH;//??8???
+    AdcRes[10] = ADRESL;//??8???
+    
+    
+
+    outbuf[18] = (char)(AdcRes[3] / 10.0);
+    outbuf[19] = (char)(AdcRes[4] / 10.0);
+    outbuf[20] = (char)(AdcRes[5] / 10.0);
+    outbuf[21] = (char)(AdcRes[6] / 10.0);
+    outbuf[22] = (char)(AdcRes[7] / 10.0);
+    outbuf[23] = (char)(AdcRes[8] / 10.0);
+    outbuf[24] = (char)(AdcRes[9] / 10.0);
+    outbuf[25] = (char)(AdcRes[10] / 10.0);
      }
     }
